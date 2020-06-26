@@ -1,0 +1,17 @@
+-- trop de sessions
+
+SELECT ajout_connexion(2);
+SELECT ajout_connexion(2);
+SELECT ajout_connexion(2);
+SELECT ajout_connexion(2);
+
+
+-- trop jeune pour film adulte
+
+SELECT ajout_abo(17, 1);
+SELECT ajout_connexion(17);
+INSERT INTO VISIONNER VALUES(119063, (SELECT clef from CONNEXION WHERE id_util = 17));
+
+-- souscription abonnement ayant déjà un
+
+SELECT ajout_abo(17, 2);

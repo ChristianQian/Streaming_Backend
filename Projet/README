@@ -1,0 +1,14 @@
+Executer d'abord dans l'ordre les commandes:
+\i create_All.sql
+\i create_Trigger.sql
+\i insert_Data.sql
+
+Executer ensuite les autres fichiers dans n'importe quel ordre:
+\i test_*.sql
+
+A l'exception des fichiers test_concurrence_*.sql.
+Ces derniers doivent être executés sur deux terminaux distincts
+Terminal 1
+\i test_concurrence_notes_t1.sql
+Terminal 2
+\i test_concurrence_notes_t2.sql
