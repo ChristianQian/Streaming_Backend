@@ -1,1 +1,6 @@
-# BDAv
+# Streaming_Backend
+A Netflix-type database that stores user accounts, films.
+A user can choose a subscription, open a session, add tags and ratings to movies, search movies by properties (type, date, ratings, tags ...)
+Constraints and triggers ensure data integrity : 
+- limitation to video quality, number of opened session, age restriction...
+- user deletion, movies ratings updates, archiving a actions upon creation or deletion...
